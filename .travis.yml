@@ -5,7 +5,7 @@ git:
 
 before_install:
  - sudo apt-get update -qq
- - sudo apt-get install mono
+ - sudo apt-get install mono-dmcs mono-xbuild
 
 script:
  - ( cd examples && mkdir bin && xbuild examples.csproj )
