@@ -24,7 +24,7 @@ public class WheelPIDController
 	[DllImport("libwc")] private static extern void wcWheelPIDController_setWindupGuard( IntPtr wheelPIDController, double guard );
 
 	[DllImport("libwc")] private static extern double wcWheelPIDController_update( IntPtr wheelPIDController, double currentError, double delta );
-	[DllImport("libwc")] private static extern double wcWheelPIDController_updateAngular( IntPtr wheelPIDController, int targetAngleIncrements, int actualAngleIncrements, int incrementsPerTurn, double delta );
+	[DllImport("libwc")] private static extern double wcWheelPIDController_updateAngular( IntPtr wheelPIDController, int targetAngleIncrements, int actualAngleIncrements, uint incrementsPerTurn, double delta );
 
 	internal IntPtr handle;
 
@@ -65,7 +65,7 @@ public class WheelPIDController
 		return wcWheelPIDController_update( handle, currentError, delta );
 	}
 
-	public double updateAngular( int targetAngleIncrements, int actualAngleIncrements, int incrementsPerTurn, double delta )
+	public double updateAngular( int targetAngleIncrements, int actualAngleIncrements, uint incrementsPerTurn, double delta )
 	{
 		return wcWheelPIDController_updateAngular( handle, targetAngleIncrements, actualAngleIncrements, incrementsPerTurn, delta );
 	}
