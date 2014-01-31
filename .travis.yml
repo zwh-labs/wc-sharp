@@ -1,0 +1,18 @@
+language: c
+
+git:
+  depth: 1
+
+before_install:
+ - sudo apt-get update -qq
+ - sudo apt-get install mono
+
+script:
+ - ( cd examples && mkdir bin && xbuild examples.csproj )
+
+notifications:
+  irc:
+    channels:
+      - "irc.euirc.net#hswgt.ai"
+    use_notice: true
+    skip_join: true
