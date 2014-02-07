@@ -16,9 +16,7 @@ public class ExampleThread
 		Connection connection = new Connection( configuration );
 		Thread thread = new Thread( connection );
 
-		Console.WriteLine("Running for 10 seconds");
-		int cnt = 0;
-		while( cnt < 10 )
+		while( true )
 		{
 			System.Threading.Thread.Sleep( 1000 );
 			for( uint i = 0; i < thread.wheelCount; i++ )
@@ -26,7 +24,6 @@ public class ExampleThread
 				WheelMovement wm = thread.retrieveWheelMovement( i );
 				Console.WriteLine("Wheel:\tchannel=" + i + "\terror=" + wm.error + "\tvalue=" + wm.increments + "\tturn=" + wm.getTurns( configuration ) );
 			}
-			cnt++;
 		}
 	}
 }

@@ -10,6 +10,8 @@ public class Thread
 	[DllImport("libwc")] private static extern IntPtr wcThread_start( IntPtr connection );
 	[DllImport("libwc")] private static extern bool wcThread_stop( IntPtr thread );
 
+	[DllImport("libwc")] private static extern bool wcThread_isRunning( IntPtr thread );
+
 	[DllImport("libwc")] private static extern WheelMovement wcThread_retrieveWheelMovement( IntPtr thread, uint index );
 	[DllImport("libwc")] private static extern uint wcThread_getWheelCount( IntPtr thread );
 
@@ -18,6 +20,11 @@ public class Thread
 	public uint wheelCount
 	{
 		get { return wcThread_getWheelCount( handle ); }
+	}
+
+	public bool isRunning
+	{
+		get { return wcThread_isRunning( handle ); }
 	}
 
 	public Thread( Connection connection ) { handle = wcThread_start( connection.handle ); }
