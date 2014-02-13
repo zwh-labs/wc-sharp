@@ -1,6 +1,9 @@
 namespace WC
 {
 
+/**
+ * \brief Error conditions used by the controller.
+ */
 public enum Error : byte
 {
 	NoError     =      0, ///< no error detected
