@@ -114,15 +114,19 @@ $(document).ready(function(){initNavTree('class_w_c_1_1_thread.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad0134975d428d3fdf28b18377dfb2e19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_thread.html#ad0134975d428d3fdf28b18377dfb2e19">Thread</a> (<a class="el" href="class_w_c_1_1_connection.html">Connection</a> connection)</td></tr>
+<tr class="memdesc:ad0134975d428d3fdf28b18377dfb2e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new thread listening on a connection.  <a href="#ad0134975d428d3fdf28b18377dfb2e19">More...</a><br/></td></tr>
 <tr class="separator:ad0134975d428d3fdf28b18377dfb2e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bfea06d291ab2a8c7388ee6c2c3cc01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_w_c_1_1_wheel_movement.html">WheelMovement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_thread.html#a4bfea06d291ab2a8c7388ee6c2c3cc01">retrieveWheelMovement</a> (uint index)</td></tr>
+<tr class="memdesc:a4bfea06d291ab2a8c7388ee6c2c3cc01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the accumulated wheel movements.  <a href="#a4bfea06d291ab2a8c7388ee6c2c3cc01">More...</a><br/></td></tr>
 <tr class="separator:a4bfea06d291ab2a8c7388ee6c2c3cc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a6485e5f3955fa448ed32105ce9673a96"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_thread.html#a6485e5f3955fa448ed32105ce9673a96">wheelCount</a><code> [get]</code></td></tr>
+<tr class="memdesc:a6485e5f3955fa448ed32105ce9673a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of tracked wheels.  <a href="#a6485e5f3955fa448ed32105ce9673a96">More...</a><br/></td></tr>
 <tr class="separator:a6485e5f3955fa448ed32105ce9673a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e1fbda907c4c69651e7ffed1543106"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_thread.html#a35e1fbda907c4c69651e7ffed1543106">isRunning</a><code> [get]</code></td></tr>
+<tr class="memdesc:a35e1fbda907c4c69651e7ffed1543106"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the thread is still running.  <a href="#a35e1fbda907c4c69651e7ffed1543106">More...</a><br/></td></tr>
 <tr class="separator:a35e1fbda907c4c69651e7ffed1543106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -147,6 +151,14 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Starts a new thread listening on a connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connection</td><td>The connection to listen on. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -173,6 +185,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Fetches the accumulated wheel movements. </p>
+<p>Returns the accumulated wheel movements for the given wheel index since the last call using the same index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The wheel's index to retrieve. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The accumulated wheel movements. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -194,6 +216,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>True if the thread is still running. </p>
+
 </div>
 </div>
 <a class="anchor" id="a6485e5f3955fa448ed32105ce9673a96"></a>
@@ -214,6 +238,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The number of tracked wheels. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -225,7 +251,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_w_c.html">WC</a></li><li class="navelem"><a class="el" href="class_w_c_1_1_thread.html">Thread</a></li>
-    <li class="footer">Generated on Tue Feb 11 2014 15:28:58 for wc-sharp by
+    <li class="footer">Generated on Thu Feb 13 2014 13:38:07 for wc-sharp by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

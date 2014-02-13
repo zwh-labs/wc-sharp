@@ -109,16 +109,23 @@ $(document).ready(function(){initNavTree('class_w_c_1_1_connection.html','');});
 <div class="title">Connection Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Handles the connection to a controller.  
+ <a href="class_w_c_1_1_connection.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a844a1c638894f6ac3ba14da7c43901d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_connection.html#a844a1c638894f6ac3ba14da7c43901d8">Connection</a> (string file)</td></tr>
-<tr class="separator:a844a1c638894f6ac3ba14da7c43901d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac056c22692ade4f08c5b1d49c74c40f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_connection.html#ac056c22692ade4f08c5b1d49c74c40f9">Connection</a> (string devicePath)</td></tr>
+<tr class="memdesc:ac056c22692ade4f08c5b1d49c74c40f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a new connection.  <a href="#ac056c22692ade4f08c5b1d49c74c40f9">More...</a><br/></td></tr>
+<tr class="separator:ac056c22692ade4f08c5b1d49c74c40f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb40b42b80818a0eadab4fafffe9cb06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_connection.html#acb40b42b80818a0eadab4fafffe9cb06">Connection</a> (<a class="el" href="class_w_c_1_1_configuration.html">Configuration</a> configuration)</td></tr>
+<tr class="memdesc:acb40b42b80818a0eadab4fafffe9cb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a new connection.  <a href="#acb40b42b80818a0eadab4fafffe9cb06">More...</a><br/></td></tr>
 <tr class="separator:acb40b42b80818a0eadab4fafffe9cb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a844a1c638894f6ac3ba14da7c43901d8"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Handles the connection to a controller. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ac056c22692ade4f08c5b1d49c74c40f9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -129,7 +136,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="class_w_c_1_1_connection.html">Connection</a> </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>file</em></td><td>)</td>
+          <td class="paramname"><em>devicePath</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -139,6 +146,20 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Opens a new connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePath</td><td>The path to the controller's device. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FileNotFoundException</td><td>The given device could not be opened. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -164,6 +185,20 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Opens a new connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">configuration</td><td>The controllers configuration. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FileNotFoundException</td><td>The device could not be opened. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -175,7 +210,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_w_c.html">WC</a></li><li class="navelem"><a class="el" href="class_w_c_1_1_connection.html">Connection</a></li>
-    <li class="footer">Generated on Tue Feb 11 2014 15:28:58 for wc-sharp by
+    <li class="footer">Generated on Thu Feb 13 2014 13:38:07 for wc-sharp by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

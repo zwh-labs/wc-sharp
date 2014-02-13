@@ -110,26 +110,42 @@ $(document).ready(function(){initNavTree('class_w_c_1_1_configuration.html','');
 <div class="title">Configuration Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Controller configuration.  
+ <a href="class_w_c_1_1_configuration.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a36d123dcc42ef58da853d1eb86f12199"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_configuration.html#a36d123dcc42ef58da853d1eb86f12199">Configuration</a> ()</td></tr>
 <tr class="separator:a36d123dcc42ef58da853d1eb86f12199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f21042b3fda511714bcc8b0c3cf8dae"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_configuration.html#a3f21042b3fda511714bcc8b0c3cf8dae">getWheelIncrementsPerTurn</a> (uint wheelIndex)</td></tr>
+<tr class="memdesc:a3f21042b3fda511714bcc8b0c3cf8dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of increments per turn of a wheel.  <a href="#a3f21042b3fda511714bcc8b0c3cf8dae">More...</a><br/></td></tr>
 <tr class="separator:a3f21042b3fda511714bcc8b0c3cf8dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fb872e65cb759f6cdb2cea2044150b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_configuration.html#a5fb872e65cb759f6cdb2cea2044150b7">setWheel</a> (uint wheelIndex, uint incrementsPerTurn)</td></tr>
+<tr class="memdesc:a5fb872e65cb759f6cdb2cea2044150b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the configuration of a wheel.  <a href="#a5fb872e65cb759f6cdb2cea2044150b7">More...</a><br/></td></tr>
 <tr class="separator:a5fb872e65cb759f6cdb2cea2044150b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa73e7c4dd1df5fd5fbf81c7764ee1533"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_configuration.html#aa73e7c4dd1df5fd5fbf81c7764ee1533">ToString</a> ()</td></tr>
+<tr class="memdesc:aa73e7c4dd1df5fd5fbf81c7764ee1533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of this configuration.  <a href="#aa73e7c4dd1df5fd5fbf81c7764ee1533">More...</a><br/></td></tr>
 <tr class="separator:aa73e7c4dd1df5fd5fbf81c7764ee1533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a8a0187f98d28ea4aa167a57a77a65f0b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_configuration.html#a8a0187f98d28ea4aa167a57a77a65f0b">devicePath</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8a0187f98d28ea4aa167a57a77a65f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The device path.  <a href="#a8a0187f98d28ea4aa167a57a77a65f0b">More...</a><br/></td></tr>
 <tr class="separator:a8a0187f98d28ea4aa167a57a77a65f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6485e5f3955fa448ed32105ce9673a96"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_c_1_1_configuration.html#a6485e5f3955fa448ed32105ce9673a96">wheelCount</a><code> [get]</code></td></tr>
+<tr class="memdesc:a6485e5f3955fa448ed32105ce9673a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of wheels configured.  <a href="#a6485e5f3955fa448ed32105ce9673a96">More...</a><br/></td></tr>
 <tr class="separator:a6485e5f3955fa448ed32105ce9673a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Controller configuration. </p>
+<p>The configuration is used to specify:</p>
+<ul>
+<li>how to connect to a controller</li>
+<li>how many wheels there are</li>
+<li>and how each wheel is configured. </li>
+</ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a36d123dcc42ef58da853d1eb86f12199"></a>
 <div class="memitem">
 <div class="memproto">
@@ -176,6 +192,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the number of increments per turn of a wheel. </p>
+<p>Returns the number of increments per turn for the given wheel's index previously set by <a class="el" href="class_w_c_1_1_configuration.html#a5fb872e65cb759f6cdb2cea2044150b7" title="Sets the configuration of a wheel. ">setWheel( uint wheelIndex, uint incrementsPerTurn )</a> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wheelIndex</td><td>Index of the wheel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of increments per turn for the given wheel's index. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a5fb872e65cb759f6cdb2cea2044150b7"></a>
@@ -210,6 +236,20 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sets the configuration of a wheel. </p>
+<p>Each wheel's incremental rotary encoder generates a fixed number of increments for a full turn.<br/>
+Set number of increments for each wheel using this function.<br/>
+</p>
+<dl class="section note"><dt>Note</dt><dd>This function will allocate memory for each wheel's index up to the given index if it is not yet configured. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wheelIndex</td><td>Index of the wheel. </td></tr>
+    <tr><td class="paramname">incrementsPerTurn</td><td>The number of increments per turn for this wheel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aa73e7c4dd1df5fd5fbf81c7764ee1533"></a>
@@ -233,6 +273,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns a string representation of this configuration. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -254,6 +296,11 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The device path. </p>
+<p>This is a platform specific string identifying a path to the controller's device.<br/>
+On Linux this might for example be "/dev/ttyACM0" - or "COM1" on Windows.<br/>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a6485e5f3955fa448ed32105ce9673a96"></a>
@@ -274,6 +321,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The number of wheels configured. </p>
+<p>This will return the highest index used in a call to <a class="el" href="class_w_c_1_1_configuration.html#a5fb872e65cb759f6cdb2cea2044150b7" title="Sets the configuration of a wheel. ">setWheel( uint wheelIndex, uint incrementsPerTurn )</a> + 1. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -285,7 +335,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_w_c.html">WC</a></li><li class="navelem"><a class="el" href="class_w_c_1_1_configuration.html">Configuration</a></li>
-    <li class="footer">Generated on Tue Feb 11 2014 15:28:58 for wc-sharp by
+    <li class="footer">Generated on Thu Feb 13 2014 13:38:07 for wc-sharp by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
