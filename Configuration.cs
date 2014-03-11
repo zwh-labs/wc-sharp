@@ -16,16 +16,16 @@ namespace WC
  */
 public class Configuration
 {
-	[DllImport("libwc")] private static extern IntPtr wcConfiguration_new();
-	[DllImport("libwc")] private static extern bool wcConfiguration_delete( IntPtr configuration );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern IntPtr wcConfiguration_new();
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern bool wcConfiguration_delete( IntPtr configuration );
 
-	[DllImport("libwc")] private static extern IntPtr wcConfiguration_getDevicePath( IntPtr configuration );
-	[DllImport("libwc")] private static extern uint wcConfiguration_getWheelCount( IntPtr configuration );
-	[DllImport("libwc")] private static extern uint wcConfiguration_getWheelIncrementsPerTurn( IntPtr configuration, uint wheelIndex );
-	[DllImport("libwc")] private static extern void wcConfiguration_setDevicePath( IntPtr configuration, IntPtr devicePath );
-	[DllImport("libwc")] private static extern bool wcConfiguration_setWheel( IntPtr configuration, uint wheelIndex, uint incrementsPerTurn );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern IntPtr wcConfiguration_getDevicePath( IntPtr configuration );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern uint wcConfiguration_getWheelCount( IntPtr configuration );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern uint wcConfiguration_getWheelIncrementsPerTurn( IntPtr configuration, uint wheelIndex );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern void wcConfiguration_setDevicePath( IntPtr configuration, IntPtr devicePath );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern bool wcConfiguration_setWheel( IntPtr configuration, uint wheelIndex, uint incrementsPerTurn );
 
-	[DllImport("libwc")] private static extern int wcConfiguration_snprint( IntPtr s, UIntPtr n, IntPtr configuration );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern int wcConfiguration_snprint( IntPtr s, UIntPtr n, IntPtr configuration );
 
 	internal IntPtr handle;
 

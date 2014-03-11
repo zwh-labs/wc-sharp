@@ -18,23 +18,23 @@ namespace WC
  */
 public class WheelPIDController
 {
-	[DllImport("libwc")] private static extern IntPtr wcWheelPIDController_new();
-	[DllImport("libwc")] private static extern bool wcWheelPIDController_delete( IntPtr wheelPIDController );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern IntPtr wcWheelPIDController_new();
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern bool wcWheelPIDController_delete( IntPtr wheelPIDController );
 
-	[DllImport("libwc")] private static extern void wcWheelPIDController_reset( IntPtr wheelPIDController );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern void wcWheelPIDController_reset( IntPtr wheelPIDController );
 
-	[DllImport("libwc")] private static extern double wcWheelPIDController_getProportionalGain( IntPtr wheelPIDController );
-	[DllImport("libwc")] private static extern double wcWheelPIDController_getIntegralGain( IntPtr wheelPIDController );
-	[DllImport("libwc")] private static extern double wcWheelPIDController_getDerivativeGain( IntPtr wheelPIDController );
-	[DllImport("libwc")] private static extern double wcWheelPIDController_getWindupGuard( IntPtr wheelPIDController );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern double wcWheelPIDController_getProportionalGain( IntPtr wheelPIDController );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern double wcWheelPIDController_getIntegralGain( IntPtr wheelPIDController );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern double wcWheelPIDController_getDerivativeGain( IntPtr wheelPIDController );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern double wcWheelPIDController_getWindupGuard( IntPtr wheelPIDController );
 
-	[DllImport("libwc")] private static extern void wcWheelPIDController_setProportionalGain( IntPtr wheelPIDController, double gain );
-	[DllImport("libwc")] private static extern void wcWheelPIDController_setIntegralGain( IntPtr wheelPIDController, double gain );
-	[DllImport("libwc")] private static extern void wcWheelPIDController_setDerivativeGain( IntPtr wheelPIDController, double gain );
-	[DllImport("libwc")] private static extern void wcWheelPIDController_setWindupGuard( IntPtr wheelPIDController, double guard );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern void wcWheelPIDController_setProportionalGain( IntPtr wheelPIDController, double gain );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern void wcWheelPIDController_setIntegralGain( IntPtr wheelPIDController, double gain );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern void wcWheelPIDController_setDerivativeGain( IntPtr wheelPIDController, double gain );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern void wcWheelPIDController_setWindupGuard( IntPtr wheelPIDController, double guard );
 
-	[DllImport("libwc")] private static extern double wcWheelPIDController_update( IntPtr wheelPIDController, double currentError, double delta );
-	[DllImport("libwc")] private static extern double wcWheelPIDController_updateAngular( IntPtr wheelPIDController, int targetAngleIncrements, int actualAngleIncrements, uint incrementsPerTurn, double delta );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern double wcWheelPIDController_update( IntPtr wheelPIDController, double currentError, double delta );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern double wcWheelPIDController_updateAngular( IntPtr wheelPIDController, int targetAngleIncrements, int actualAngleIncrements, uint incrementsPerTurn, double delta );
 
 	internal IntPtr handle;
 

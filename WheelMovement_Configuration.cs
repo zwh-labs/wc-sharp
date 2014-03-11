@@ -10,7 +10,7 @@ namespace WC
  */
 public static class WheelMovement_Configuration
 {
-	[DllImport("libwc")] private static extern double wcWheelMovement_getTurns( ref WheelMovement wheelMovement, IntPtr configuration );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern double wcWheelMovement_getTurns( ref WheelMovement wheelMovement, IntPtr configuration );
 
 	/**
 	 * \brief Return wheel movement as fraction of a full turn.

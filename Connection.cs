@@ -12,8 +12,8 @@ namespace WC
  */
 public class Connection
 {
-	[DllImport("libwc")] private static extern IntPtr wcConnection_open( IntPtr devicePath );
-	[DllImport("libwc")] private static extern bool wcConnection_close( IntPtr connection );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern IntPtr wcConnection_open( IntPtr devicePath );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern bool wcConnection_close( IntPtr connection );
 
 	internal IntPtr handle;
 

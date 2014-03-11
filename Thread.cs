@@ -7,13 +7,13 @@ namespace WC
 
 public class Thread
 {
-	[DllImport("libwc")] private static extern IntPtr wcThread_start( IntPtr connection );
-	[DllImport("libwc")] private static extern bool wcThread_stop( IntPtr thread );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern IntPtr wcThread_start( IntPtr connection );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern bool wcThread_stop( IntPtr thread );
 
-	[DllImport("libwc")] private static extern bool wcThread_isRunning( IntPtr thread );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern bool wcThread_isRunning( IntPtr thread );
 
-	[DllImport("libwc")] private static extern WheelMovement wcThread_retrieveWheelMovement( IntPtr thread, uint index );
-	[DllImport("libwc")] private static extern uint wcThread_getWheelCount( IntPtr thread );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern WheelMovement wcThread_retrieveWheelMovement( IntPtr thread, uint index );
+	[DllImport("libwc",CallingConvention=CallingConvention.Cdecl)] private static extern uint wcThread_getWheelCount( IntPtr thread );
 
 	internal IntPtr handle;
 
